@@ -62,7 +62,8 @@ class MyFrame(wx.Frame):
     def __set_properties(self):
         # begin wxGlade: MyFrame.__set_properties
         self.SetTitle(_(u"\u5b57\u5e16\u751f\u6210\u5668"))
-        self.SetBackgroundColour(wx.SystemSettings_GetColour(wx.SYS_COLOUR_BTNFACE))
+        # self.SetBackgroundColour(wx.SystemSettings_GetColour(wx.SYS_COLOUR_BTNFACE))
+        self.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_BTNFACE))
         self.combo_box_mode.SetMinSize((300, -1))
         self.combo_box_font.SetMinSize((300, -1))
         self.text_ctrl_pages_limit.SetMinSize((60, -1))
@@ -163,7 +164,7 @@ class MyFrame(wx.Frame):
         sizer_6.Add((20, 20), 0, 0, 0)
         label_18 = wx.StaticText(self, wx.ID_ANY, _(u"\u5b57\u4f53\uff1a"))
         sizer_10.Add(label_18, 0, wx.ALIGN_CENTER_VERTICAL, 0)
-        sizer_10.Add(self.combo_box_font, 0, wx.ALIGN_CENTER_VERTICAL | wx.EXPAND, 0)
+        sizer_10.Add(self.combo_box_font, 0, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_10.Add((20, 20), 0, 0, 0)
         label_24 = wx.StaticText(self, wx.ID_ANY, _(u"\u5b57\u4f53\u7f29\u653e\uff1a"))
         sizer_10.Add(label_24, 0, wx.ALIGN_CENTER_VERTICAL, 0)
@@ -199,7 +200,7 @@ class MyFrame(wx.Frame):
         sizer_14.Add(self.checkbox_output_page_num, 0, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_14.Add((20, 20), 0, 0, 0)
         sizer_14.Add(self.checkbox_output_foot_notes, 0, wx.ALIGN_CENTER_VERTICAL, 0)
-        sizer_14.Add(self.text_ctrl_foot_notes, 0, wx.ALIGN_CENTER_VERTICAL | wx.EXPAND, 0)
+        sizer_14.Add(self.text_ctrl_foot_notes, 0, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_14.Add((10, 20), 0, 0, 0)
         label_26 = wx.StaticText(self, wx.ID_ANY, _(u"\u4f4d\u7f6e\uff1a"))
         sizer_14.Add(label_26, 0, wx.ALIGN_CENTER_VERTICAL, 0)
